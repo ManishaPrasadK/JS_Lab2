@@ -74,17 +74,17 @@ function Quiz(questions) {
   
   function showScores() {
     var gameOverHTML = "<h1>Result</h1>";
-    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + ".And mark percentage is: "+(quiz.score/questions.length*100)+"%"+"</h2>";
+    gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + ".And mark percentage is: "+(quiz.score/questions.length*100)+"%"+"</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
   };
   
   // declare questions here
   const questions = [
-    new Question("1. JavaScript supports", ["Functions", "XHTML","CSS", "HTML"], "Functions"),
-    new Question("2. Which language is used for styling web pages?", ["HTML", "JQuery", "CSS", "XML"], "CSS"),
+    new Question("1. Javascript is an _______ language", ["Object-Oriented", "Object based","Procedural ", "None"], "Object-Oriented"),
+    new Question("2. Which of the following keywords is used to define a variable in Javascript?", ["Var", "let", "Both A and B", "None"], "Both A and B"),
     new Question("3. Which is not a JavaScript Framework?", ["Python Script", "JQuery","Django", "NodeJS"], "Django"),
-    new Question("4. Which is used for Connect To Database?", ["PHP", "HTML", "JS", "All"], "PHP"),
+    new Question("4. Which is used for Connecting To Database?", ["PHP", "HTML", "JS", "All"], "PHP"),
     new Question("5. JavaScript is a ", ["Language", "Programming Language", "D  lopment", "All"], "Programming Language")
   ];
   
